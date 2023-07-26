@@ -1,0 +1,32 @@
+table {
+    margin:auto;
+    border: black 1px solid;
+}
+.head {
+    background-color: black;
+    color: white;
+}
+td:nth-child(even) {
+    background-color: brown;
+}
+td:nth-child(odd) {
+    background-color: blueviolet;
+}
+body {
+    text-align: center;
+}
+a  {
+    color: blue;
+}
+#second {
+    color: blue;
+}
+#first {
+    color: red;
+}
+#ggg {
+    color: blue;
+}
+input {
+    background-color: pink;
+}

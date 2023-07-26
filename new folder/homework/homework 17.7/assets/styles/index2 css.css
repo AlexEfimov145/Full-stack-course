@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+div.ggg {
+text-align: center;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow:20px 20px 20px black;
+padding: 1px;
+color: chartreuse;
+height: 300px;
+width: 800px;
+font-size: 75px;
+font-family: 'blangkon', sans-serif;
+animation: slidingColor 5s infinite, slowLinearRotation 10s linear infinite;
+}
+
+  @font-face {
+    font-family: 'blangkon';
+    src: url('/homework 17.7/assets/blangkon/Blangkon.ttf') format('woff2');
+  }
+
+  @keyframes slidingColor {
+    0% {
+      background-color: rgb(139, 25, 0);
+    }
+    50% {
+      background-color: rgb(0, 128, 0);
+    }
+    100% {
+      background-color: rgb(139, 25, 0);
+    }
+  }
+
+  @keyframes slowLinearRotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

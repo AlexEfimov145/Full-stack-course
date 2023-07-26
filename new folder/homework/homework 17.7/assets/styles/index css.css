@@ -1,0 +1,23 @@
+.container {
+   
+    text-align: center;
+   display: flex;
+   flex-direction: row;
+    margin: 30px; 
+}
+p  {
+    border: 2px solid black;
+    margin: 30px;
+    padding: 20px;
+}
+div.container :first-child {
+    color: red;
+}
+div.container :nth-child(2) {
+    color: yellow;
+}
+div.container :last-child {
+    color: green;
+}
+
+

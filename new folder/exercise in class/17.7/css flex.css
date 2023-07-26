@@ -1,0 +1,36 @@
+section {
+margin: 20px;
+height: 150px;
+border: 1px solid red;
+background-color: aqua;
+display: flex;
+flex-direction: row;
+}
+section > div {
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+    border: 1px solid blueviolet;
+    background-color: turquoise;
+    /* flex-basis: 20%;  */
+    /* flex: 1;  */
+
+}
+/* section#second> div:first-child { */
+    /* flex: 2;  */
+
+/* } */
+#second {
+    justify-content: flex-start;
+    align-items: center;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: 100px;
+border: 1px solid red;
+background-color: aqua;
+align-items: end;
+justify-content: space-between;
+}

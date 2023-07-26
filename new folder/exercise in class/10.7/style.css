@@ -1,0 +1,45 @@
+/*element name selector */
+p {
+    color: red;
+   
+}
+h1 {
+    color: green;
+    background-color: blueviolet;
+}
+.neon {
+    color: navy;
+    background-color: chartreuse;
+    font-size: xx-large;
+}
+#ggg {
+    color: darkgoldenrod;
+}
+p[dir=rtl] {
+    text-decoration: underline;
+}
+p:hover {
+    border: 2px;color: blue;
+}
+p::selection {
+    text-decoration: underline;
+}
+span {
+    color: brown;
+}
+p span {
+    text-decoration: underline;
+}
+
+p > span {
+   font-size: xx-large;
+}
+p > a > span {
+    font-size: x-small;
+ }
+p,span {
+    border: 1px solid black 
+}
+a.a1 {
+    background-color: cadetblue;
+}

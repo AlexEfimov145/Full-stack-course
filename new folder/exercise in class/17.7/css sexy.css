@@ -1,0 +1,28 @@
+h2{
+    margin: 0;
+}
+.amazing {
+    border: 1px solid black;
+    text-align: center;
+    width: 600px;
+    height: 100px;
+    margin: 300px auto;
+    line-height: 100px;
+    border-radius: 20px;
+    box-shadow: 10px 8px black;
+    background-color: green;
+    transition: 2s;
+    transform: rotate(70deg);
+}
+.amazing:hover{
+    background-color: red;
+    animation: myanimation 2s linear alternate infinite;
+}
+@keyframes myanimation {
+    from{
+        width: 600px;
+    }
+    to{
+        width: 800px;
+    }
+}

@@ -1,0 +1,12 @@
+section {
+    display: grid;
+    /* grid-template-columns: 40% 40% 40%; */
+    /* grid-template-columns: 1fr 1fr 1fr ; */
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-rows: 100px 22px 33px 100px; */
+    grid-template-rows: repeat(4,100px);
+    border: 1px solid palegreen;
+}
+div {
+    border: 1px solid black;
+}

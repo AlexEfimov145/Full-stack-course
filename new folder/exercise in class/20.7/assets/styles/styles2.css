@@ -1,0 +1,42 @@
+body , html {
+    height: 100%;
+}
+#container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(13,1fr);
+    grid-template-rows: 20% 50% 15% 15%;
+    text-align: center;
+}
+header,footer {
+    grid-column: span 13;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    grid-column: span 12;
+}
+header {
+    background-color: red;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+}
+#g {
+    flex: 1;
+    background-color: blue;
+}
+#j {
+    flex: 1;
+    background-color: crimson;
+}
+#l {
+    background-color: aqua;
+}
+#h {
+    background-color:darkmagenta;
+}
+
+

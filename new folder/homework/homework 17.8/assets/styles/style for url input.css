@@ -12,3 +12,8 @@
   input {
     margin-bottom: 20px;
   }
+  tbody {
+    position: relative;
+    display: flex;
+    flex: row;
+  }

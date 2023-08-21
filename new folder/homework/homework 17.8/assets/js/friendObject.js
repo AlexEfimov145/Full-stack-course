@@ -1,4 +1,5 @@
 var friendList = [];
+loadData();
 
 function loadImage() {
   var urlData = document.getElementById("imageURL").value; //input
@@ -13,7 +14,7 @@ function loadImage() {
   friendList.push(data);
 
   createTable();
-
+  saveData();
   document.getElementById("friendForm").reset();
 
   //oh no, it's me again
@@ -49,4 +50,12 @@ function clearTable() {
 function removeLast() {
   friendList.pop();
   createTable();
+}
+
+function loadData() {
+  friendList = JSON.parse(localStorage.getItem("friends"));
+  createTable();
+}
+function saveData() {
+  localStorage.setItem("friends", JSON.stringify(friendList));
 }

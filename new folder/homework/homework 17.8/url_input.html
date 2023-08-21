@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="assets\js\js_for_url_input.js"></script>
+    <script defer src="assets\js\js_for_url_input.js"></script>
     <link rel="stylesheet" href="assets\styles\style_for_url_input.css" />
   </head>
   <body>
@@ -30,8 +30,13 @@
       />
     </div>
     <hr />
-    <table>
-      <tbody id="friendList"></tbody>
+    <table id="friendlist">
+      <tr>
+        <th>Image</th>
+        <th>friend name</th>
+        <th>friend phone</th>
+      </tr>
+      <tbody id="data"></tbody>
     </table>
   </body>
 </html>

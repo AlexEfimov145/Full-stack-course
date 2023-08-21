@@ -12,8 +12,31 @@
 input {
   margin-bottom: 20px;
 }
-tbody {
+/*tbody {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+}*/
+
+#friendlist {
+  border-collapse: collapse;
+  width: 100%;
+}
+#friendlist td,
+#friendlist th {
+  border: 1px solid white;
+  padding: 8px;
+}
+#friendlist tr:nth-child(even) {
+  background-color: aliceblue;
+}
+#friendlist tr:hover {
+  background-color: aliceblue;
+}
+#friendlist th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: chartreuse;
+  color: aliceblue;
 }

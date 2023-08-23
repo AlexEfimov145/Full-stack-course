@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="assets\js\indexjs.js"></script>
+    <link rel="stylesheet" href="assets\style.css\indexstyle.css" />
+  </head>
+  <body>
+    <h1>SHOPPING LIST</h1>
+    <hr />
+    <input
+      type="text"
+      placeholder="enter item name"
+      id="itemName"
+      class="input"
+    />
+    <br />
+    <input
+      type="number"
+      placeholder="Enter quantity"
+      id="quantity"
+      class="input"
+    />
+    <br />
+    <input type="button" value="click to add" id="addButton" onclick="add()" />
+    <hr />
+    <table id="table">
+      <tr>
+        <th id="name">ItemName</th>
+        <th id="q">ItemQuantity</th>
+        <th id="check">Check if Got</th>
+        <th id="time">Date and Time</th>
+      </tr>
+      <tbody id="data"></tbody>
+    </table>
+  </body>
+</html>

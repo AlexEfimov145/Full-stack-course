@@ -1,0 +1,23 @@
+* {
+  text-align: center;
+}
+input {
+  text-align: center;
+}
+#table {
+  margin: auto;
+  text-align: center;
+  padding: 2px;
+}
+#name {
+  background-color: chocolate;
+}
+#q {
+  background-color: aqua;
+}
+#check {
+  background-color: chartreuse;
+}
+#time {
+  background-color: darkorchid;
+}

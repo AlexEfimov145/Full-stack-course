@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="assets\js\index2.js"></script>
+    <link rel="stylesheet" href="/assets/style/index.css" />
+  </head>
+  <body>
+    <div id="head">
+      <h1>CAR INPUT</h1>
+    </div>
+    <div id="input">
+      <input type="text" id="carManufacturer" placeholder="car manufacturer" />
+      <input type="text" id="carType" placeholder="car type" />
+      <input type="number" id="carYear" placeholder="car year" />
+      <input type="url" id="urlInput" placeholder="url input" />
+      <select id="previousOwnership" name="previous ownership">
+        <option value="privet">privet</option>
+        <option value="company">company</option>
+        <option value="taxi">taxi</option>
+        <option value="driving">driving teacher</option>
+        <option value="cripple">cripple</option>
+      </select>
+      <select id="corvet" name="corvet">
+        <option value="yas">yas</option>
+        <option value="no">no</option>
+      </select>
+      <input type="number" id="price" placeholder="price" />
+      <input type="button" id="btnInput" value="add" onclick="addCar()" />
+      <input
+        type="button"
+        id="btnInput"
+        value="clear all"
+        onclick="clearAll()"
+      />
+    </div>
+    <div id="output"></div>
+  </body>
+</html>

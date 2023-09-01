@@ -1,0 +1,15 @@
+#input {
+  margin: auto;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+}
+#head {
+  margin: auto;
+  width: 800px;
+  text-align: center;
+}
+#output {
+    display: flex;
+    flex-direction: row;
+}

@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CheckList</title>
-    <link rel="stylesheet" href="/assets/style/checklist_style.css">
+    <link rel="stylesheet" href="/assets/style/checklist_style.css" />
     <script defer src="/assets/js/checklist_js.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="header">
-        <h1>CheckList</h1>
+      <h1>CheckList</h1>
     </div>
     <div id="input">
-        <input type="text" name="input" id="inputTask">
-        <br />
-        <input type="button" value="Add New" onclick="addTask()">
-        <br />
-        <input type="button" value="Delete All" onclick="deleteAllTasks()">
+      <input type="text" name="input" id="inputTask" />
+      <br />
+      <input type="button" value="Add New" onclick="addTask()" />
+      <br />
+      <input type="button" value="Delete All" onclick="deleteAllTasks()" />
     </div>
     <div id="output">
-        <table>
-            <thead>
-                <tr>
-                    <th>Task</th>
-                    <br />
-                    <th>Status</th>
-                    <br />
-                    <th>Delete</th>
-                </tr>
-            </thead>
-            <tbody id="data">
-
-            </tbody>
-        </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Task</th>
+            <br />
+            <th>Status</th>
+            <br />
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="data"></tbody>
+      </table>
     </div>
-</body>
+  </body>
 </html>

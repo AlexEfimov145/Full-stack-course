@@ -11,11 +11,18 @@
     <br />
     <br />
     <button type="button" onclick="drawStuff()">drew stuff</button>
+    <button type="button" onclick="changeColor(this)" name="red">red</button>
+    <button type="button" onclick="changeColor(this)" name="green">
+      green
+    </button>
+    <button type="button" onclick="changeColor(this)" name="blue">blue</button>
     <canvas
       id="myCanvas"
       width="640"
       height="480"
       onmousemove="mouseDraw(event)"
+      onmouseenter="newPosition(event)"
+      onmousedown="newPosition(event)"
     >
     </canvas>
   </body>

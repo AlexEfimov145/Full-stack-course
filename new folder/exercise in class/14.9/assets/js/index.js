@@ -41,10 +41,20 @@ function drawStuff() {
   painter.font = "50px Ariel";
   painter.fillText("Hello", 20, 200);
 }
-drawStuff();
 
 //drawing on mouse movement
 function mouseDraw(event) {
-  painter.lineTo(event.offsetX, event.offsetY);
-  painter.stroke();
+  if (event.buttons === 1) {
+    painter.lineTo(event.offsetX, event.offsetY);
+    painter.stroke();
+  }
+}
+
+function newPosition(event) {
+  painter.moveTo(event.offsetX, event.offsetY);
+}
+
+function changeColor(color) {
+  painter.beginPath();
+  painter.strokeStyle = `${color.name}`;
 }

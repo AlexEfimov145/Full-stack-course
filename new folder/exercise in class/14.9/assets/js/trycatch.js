@@ -5,6 +5,8 @@ function divide() {
     alert(pi);
   } catch (err) {
     alert(`error: ${err}`);
+  } finally {
+    alert("finally");
   }
   alert("done");
 }

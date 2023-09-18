@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>paint</title>
+    <script defer src="/assets/js/paintjs.js">
+      paintJs
+    </script>
+    <link rel="stylesheet" href="/assets/style/paintcss.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Paint</h1>
+    </div>
+    <div id="input">
+      <input type="button" value="Circle" onclick="randomCircle()" />
+      <input
+        type="button"
+        style="background-color: red"
+        onclick="setColor('red')"
+      />
+      <input
+        type="button"
+        style="background-color: green"
+        onclick="setColor('green')"
+      />
+      <input
+        type="button"
+        style="background-color: blue"
+        onclick="setColor('blue')"
+      />
+      <input
+        type="button"
+        style="background-color: yellow"
+        onclick="setColor('yellow')"
+      />
+      <input
+        type="button"
+        style="background-color: blueviolet"
+        onclick="setColor('blueviolet')"
+      />
+      <input
+        type="button"
+        style="background-color: aqua"
+        onclick="setColor('aqua')"
+      />
+      <input type="button" value="1" onclick="setSize(1)" />
+      <input type="button" value="2" onclick="setSize(2)" />
+      <input type="button" value="3" onclick="setSize(3)" />
+      <input type="button" value="4" onclick="setSize(4)" />
+      <input type="button" value="5" onclick="setSize(5)" />
+    </div>
+    <div>
+      <canvas
+        id="paint"
+        width="640"
+        height="480"
+        onmousemove="mouseDraw(event);"
+        onmouseenter="newPosition(event);"
+        onmousedown="newPosition(event)"
+      ></canvas>
+    </div>
+  </body>
+</html>

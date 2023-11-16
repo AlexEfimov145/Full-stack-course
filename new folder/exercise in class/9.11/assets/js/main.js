@@ -1,0 +1,13 @@
+let age;
+age = 19;
+let username;
+username = 'alex';
+let isStudent;
+isStudent = true;
+let value;
+value = 9;
+value = 'a';
+let kitten;
+kitten = { name: 'Kitten', age: 4 };
+let grades;
+grades = [1, 2, 3];

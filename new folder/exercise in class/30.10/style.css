@@ -1,0 +1,13 @@
+div {
+  width: 200px;
+  height: 100px;
+  background-color: aqua;
+  margin: 10px;
+}
+
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}

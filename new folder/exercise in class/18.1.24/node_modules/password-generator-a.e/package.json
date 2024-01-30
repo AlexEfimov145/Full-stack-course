@@ -1,0 +1,18 @@
+{
+  "name": "password-generator-a.e",
+  "version": "1.1.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "password"
+  ],
+  "author": "A.E",
+  "license": "ISC",
+  "dependencies": {
+    "password-generator-a.e": "^1.0.0"
+  }
+}

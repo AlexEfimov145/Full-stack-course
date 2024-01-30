@@ -1,0 +1,14 @@
+{
+    "app":{
+        "host": "localhost",
+        "port":8080
+    },
+    "mysql": {
+        "host": "localhost",
+        "user": "root",
+        "password": "",
+        "port":3306,
+        "database": "northwind",
+        "connectionLimit":100
+    }
+}

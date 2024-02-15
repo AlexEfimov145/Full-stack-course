@@ -1,0 +1,14 @@
+{
+    "app":{
+        "host": "localhost",
+        "port":8080
+    },
+    "mysql": {
+        "host": "localhost",
+        "user": "username",
+        "password": "password",
+        "port":3309,
+        "database": "mydb",
+        "connectionLimit":100
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "app": {
+        "name": "northwind",
+        "port": 8080,
+        "secret": "alex"
+    },
+    "mysql": {
+        "host": "localhost",
+        "user": "username",
+        "password": "password",
+        "database": "mydb",
+        "port": 3309,
+        "connectionLimit": 10
+    }
+}

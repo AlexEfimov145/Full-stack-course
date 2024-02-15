@@ -1,0 +1,17 @@
+import Joi from "joi";
+import DTO from '../../models/auth/user-dto'
+import CredentialsDTO from '../../models/auth/credentials-dto';
+
+
+
+export const signupValidator = Joi.object<DTO>({
+    username: Joi.string().regex(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/),
+    password: Joi.string().min(6).required(),
+    firstName: Joi.string().min(2).max(20).required(),
+    lastName: Joi.string().min(2).max(20).required()
+});
+
+export const loginValidator = Joi.object<CredentialsDTO>({
+    username: Joi.string().regex(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/),
+    password: Joi.string().min(6).required(),
+});

@@ -33,8 +33,27 @@ class Employees implements Model {
         `,[FirstName, LastName]);
         return this.getOne(result.insertId);   
     }
+    
+    public async update(employeeData: DTO): Promise<DTO> {
+        const { id, FirstName, LastName } = employeeData;
+        await query(`
+            UPDATE employees
+            SET FirstName = ?, LastName = ?
+            WHERE EmployeeId = ?
+        `, [FirstName, LastName, id]);
+        return this.getOne(id);
+    }
 
+    
+    
+    public async delete(employeeId: number): Promise<void> {
+        await query(`
+            DELETE FROM employees
+            WHERE EmployeeID = ?
+        `, [employeeId]);
+    }
 }
+
 
 const employee = new Employees();
 export default employee;

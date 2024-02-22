@@ -1,0 +1,24 @@
+{
+    "app": {
+        "name": "northwind",
+        "port": 8080,
+        "protocol": "http",
+        "host": "localhost",
+        "secret": "MyBloodyValentine",
+        "jwt": {
+            "expires": "3h",
+            "secret": "LinkinPark"
+        },
+        "images": {
+            "path": "C:\\Users\\alexe\\OneDrive\\Desktop\\northwind-images"
+        }
+    },
+    "mysql": {
+        "host": "localhost",
+        "user": "username",
+        "password": "password",
+        "database": "mydb",
+        "port": 3309,
+        "connectionLimit": 10
+    }
+}

@@ -49,6 +49,7 @@ function EditProduct(): JSX.Element {
         console.log(product);
         try {
             product.image = (product.image as unknown as FileList)[0];
+            
             product.id = productId;
             const updatedProduct = await productsService.editProduct(product);
             // alert(`updated a product with id ${updatedProduct.id}`)

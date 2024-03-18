@@ -104,7 +104,7 @@ class Products {
                 'Content-Type': 'multipart/form-data'
             }
         }
-        const response = await axios.put<Product>(appConfig.productsUrl + `/${product.id}`, product, config);
+        const response = await axios.patch<Product>(appConfig.productsUrl + `/${product.id}`, product, config);
 
         const updatedProduct = response.data;
 

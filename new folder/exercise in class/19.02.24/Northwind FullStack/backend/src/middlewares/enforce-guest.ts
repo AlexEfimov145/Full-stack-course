@@ -4,6 +4,6 @@ import createHttpError, { Forbidden } from "http-errors";
 import { ReasonPhrases } from 'http-status-codes';
 
 export default function enforceGuest (req: Request, res: Response, next: NextFunction) {
-    if(req.user) return next(createHttpError(Forbidden(ReasonPhrases.FORBIDDEN)));
+    // if(req.user) return next(createHttpError(Forbidden(ReasonPhrases.FORBIDDEN)));
     return next()
 }

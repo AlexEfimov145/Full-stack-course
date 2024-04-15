@@ -1,5 +1,6 @@
 import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -19,9 +20,13 @@ export class HomeComponent {
     }
 
     public ngOnInit(){
+      this.title.setTitle('NW home');
       console.log('component initialized');
     }
     public ngOnDestroy(){
       console.log('component destroyed');
+    }
+
+    public constructor (private title:Title){
     }
 }

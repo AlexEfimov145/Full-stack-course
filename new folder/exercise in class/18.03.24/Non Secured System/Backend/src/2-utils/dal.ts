@@ -1,11 +1,12 @@
-import mysql from "mysql";
+import mysql from "mysql2";
 import appConfig from "./app-config";
 
 const connection = mysql.createPool({
     host: appConfig.host,
     user: appConfig.user,
     password: appConfig.password,
-    database: appConfig.database
+    database: appConfig.database,
+    port:3309
 });
 
 function execute(sql: string): Promise<any> {

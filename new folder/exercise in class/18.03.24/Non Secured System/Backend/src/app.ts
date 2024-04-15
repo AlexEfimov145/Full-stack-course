@@ -6,11 +6,13 @@ import routeNotFound from "./3-middleware/route-not-found";
 import authController from "./6-controllers/auth-controller";
 import productsController from "./6-controllers/products-controller";
 import forumController from "./6-controllers/forum-controller";
+import striptags from "../src/3-middleware/strip-tags"
 
 const server = express();
 
 server.use(cors());
 server.use(express.json());
+server.use(striptags);
 server.use("/api", authController);
 server.use("/api", productsController);
 server.use("/api", forumController);

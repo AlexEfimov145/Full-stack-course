@@ -6,9 +6,9 @@ class DevelopmentConfig extends AppConfig {
     public isDevelopment = true;
     public isProduction = false;
     public host = "localhost";
-    public user = "root";
-    public password = "";
-    public database = "northwind";
+    public user = "username";
+    public password = "password";
+    public database = "mydb";
     public port = 4000;
 }
 

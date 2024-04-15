@@ -5,6 +5,7 @@ import UserModel from "../4-models/user-model";
 const jwtSecretKey = "JohnBryceFullStackCourse";
 
 function getNewToken(user: UserModel): string {
+    delete user.password;
     const container = { user };
     const options = { expiresIn: "3h" };
     const token = jwt.sign(container, jwtSecretKey, options);
